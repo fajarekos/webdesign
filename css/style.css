@@ -1,0 +1,101 @@
+/*
+	author: fajar eko susilo;
+*/
+
+/*	GENERAL */
+body {
+	background-color: #ddd;
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px
+}
+
+.container {
+	width: 1080px;
+	margin: 20px auto;
+	background-color: #fff;
+	overflow: hidden;
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #999;
+}
+a:hover,
+a:focus {
+	color: #666;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+p {
+	margin-bottom: 20px;
+	line-height: 24px;
+}
+
+/* HEADER */
+.header {
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* MAIN */
+.main {
+	margin: 0;
+}
+.navbar {
+	width: 225px;
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+.navbar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.navbar ul li {
+	display: block;
+}
+.navbar ul li a {
+	display: block;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	padding: 10px 5px;
+	color: #999;
+}
+.navbar ul li a:hover, a:focus {
+	color: #666;
+}
+
+.content {
+	width: 500px;
+	border: 1px solid #ddd;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+}
+	.content img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.content a {
+		font-weight: 700;
+	}
+
+
+.sidebar {
+	width: 225px;
+	border: 1px solid #ddd;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+}

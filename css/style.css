@@ -3,6 +3,11 @@
 */
 
 /*	GENERAL */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 body {
 	background-color: #ddd;
 	padding: 0;
@@ -98,4 +103,56 @@ p {
 	float: left;
 	margin: 10px;
 	padding: 10px;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* untuk ukuran 1080px kebawah */
+@media screen and (max-width: 1080px) {
+	
+	.container {
+		width: 100%;
+	}
+	.navbar {
+		width: 25%;
+		background: #fff000;
+	}
+	.content {
+		width: 68%;
+		float: right;
+	}
+	
+	.sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+}
+
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+	
+	.header, 
+	.footer{
+		text-align: center;
+	}
+	.navbar {
+		width: auto;
+		float: none;
+	}
+	
+	.content {
+		width: auto;
+		float: none;
+	}
+	
+	.sidebar {
+		width: auto;
+		float: none;
+	}
+
 }

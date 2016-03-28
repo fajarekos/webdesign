@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Kalkulator</title>
+</head>
+<script type="text/javascript">
+	function tambah()
+	{
+		a = eval(form.a.value)
+		b = eval(form.b.value)
+		c = a+b
+		form.hasil.value = c
+	}
+
+	function kurang()
+	{
+		a = eval(form.a.value)
+		b = eval(form.b.value)
+		c = a-b
+		form.hasil.value = c
+	}
+
+	function kali()
+	{
+		a = eval(form.a.value)
+		b = eval(form.b.value)
+		c = a*b
+		form.hasil.value = c
+	}
+
+	function bagi()
+	{
+		a = eval(form.a.value)
+		b = eval(form.b.value)
+		c = a/b
+		form.hasil.value = c
+	}
+	function kosong()
+	{
+		form.a.focus()
+		form.a.value = ""
+		form.b.value = ""
+		form.hasil.value = ""
+	}
+	
+
+	var angka=10;
+	  
+	if (angka==1)
+	{
+	   console.log("Angka Satu");
+	}
+	else if (angka==2)
+	{
+	   console.log("Angka Dua");
+	}
+	else if (angka==3)
+	{
+	   console.log("Angka Tiga");
+	}
+	else if (angka==4)
+	{
+	   console.log("Angka Empat");
+	} else {
+		console.log("wow angka berapakah itu")
+	}
+
+</script>
+<form name="form">
+<table border="1" cellspacing="1" cellpadding="1">
+    <tr>
+<h3>Program Kalkulator</h3>
+    </tr>
+    <tr>
+    <td><b>Bilangan 1</b></td>
+    <td>=</td>
+    <td width="150"><input type="text" name="a" size="15"></td>
+    </tr>
+    </tr>
+    <tr>
+    <td><b>Bilangan 2</b></td>
+    <td>=</td>
+    <td width="150"><input type="text" name="b" size="15"></td>
+    </tr>
+    <tr>
+    <td><b>Hasil</b></td>
+    <td>=</td>
+    <td width="150"><input type="text" name="hasil" disabled="true" size="15"></td>    
+    </tr>
+    <tr>
+    <td colspan="3" align="center">
+    <input type="button" value="tambah" onClick="tambah()" /> 
+    <input type="button" value="kurang" onClick="kurang()"/> 
+    <input type="button" value="kali" onClick="kali()"/> 
+    <input type="button" value="bagi" onClick="bagi()"/> 
+    <input type="reset" value="Reset" onClick="reset"/> 
+    </tr>
+    </td>
+</form>
+</body>
+</html>

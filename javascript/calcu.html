@@ -1,0 +1,66 @@
+<html>
+<head>
+
+	<title>Kalkulator Sederhana</title>
+	<script language="Javascript" type="text/javascript">
+		function nilai()
+		{
+			if (operator.value=='*'){
+					
+				c.value = eval(a.value) * eval(b.value);
+			
+			} else if (operator.value=='/') {
+			
+				c.value=eval(a.value)/eval(b.value);
+				
+			} else if (operator.value=='+') {
+			
+				c.value=eval(a.value)+eval(b.value);
+				
+			} else if (operator.value=='-') {
+			
+				c.value=eval(a.value)-eval(b.value);
+			}
+		}
+		function kosong()
+		{
+			form.a.value = ""
+			form.b.value = ""
+			form.c.value = ""
+			form.operator.value = "--Pilih--"
+			
+		}
+
+	</script>
+</head>
+<body>
+	<h3 align="left" style="font:berlin sans fb demi; color:#00FF33">Kalkulator</h3>
+  
+	
+	<form name="form" action="#">
+		<p>
+			Bilangan 1
+			<input name="text" type="text" id="a" width="80px" height="20px"/>
+		</p>
+		<p>
+			Bilangan 2
+			<input name="text" type="text" id="b" width="80px" height="20px"/>
+		</p>
+		<p>
+			<select name="select" id="operator">
+			  <option>--Pilih--</option>
+			  <option value="*">x</option>
+			  <option value="/">:</option>
+			  <option value="+">+</option>
+			  <option value="-">-</option>
+			</select>
+		</p>
+
+		<p>Hasil
+		  <input name="text2" type="text" id="c" width="80px" height="20px"/>
+		  <input name="button" type="button" onclick="nilai()" value="="/>
+		  <input type="reset" value="clear" name="clear" />
+		</p>
+	</form>
+</body>
+</html>
